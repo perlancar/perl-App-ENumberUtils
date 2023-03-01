@@ -3385,7 +3385,9 @@ our $data_e_number_range = [
 ];
 # END FRAGMENT id=data-e_number_range
 
-my $res = gen_read_table_func(
+my $res;
+
+$res = gen_read_table_func(
     name => 'list_enumbers',
     summary => 'List E Numbers',
     table_data => $data_e_number,
@@ -3405,7 +3407,7 @@ _
 );
 die "Can't generate function: $res->[0] - $res->[1]" unless $res->[0] == 200;
 
-my $res = gen_read_table_func(
+$res = gen_read_table_func(
     name => 'list_enumber_ranges',
     summary => 'List E Number ranges',
     table_data => $data_e_number_range,
