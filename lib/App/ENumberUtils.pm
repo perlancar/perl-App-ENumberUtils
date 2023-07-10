@@ -3334,6 +3334,8 @@ This distribution contains the following CLIs:
 
 # INSERT_EXECS_LIST
 
+Keywords: food additives, INS, FDA
+
 
 =head1 SEE ALSO
 
